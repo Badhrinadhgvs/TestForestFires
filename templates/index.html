@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Albenion Forest Fires</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+  <div class="container">
+    <h1>Albenion Forest Fires - Prediction</h1>
+    <form  method="POST">
+      <input type="number" name="Temperature" id="temp" placeholder="Enter Temperature">
+      <br>
+      <input type="number" name="RH" id="temp" placeholder="Enter RH"> 
+      <br>
+
+      <input type="number" name="WS" id="temp" placeholder="Enter WS">
+      <br>
+
+      <input type="number" name="Rain" id="temp" placeholder="Enter Rain">
+      <br>
+
+      <input type="number" name="FFMC" id="temp" placeholder="Enter FFMC">
+      <br>
+
+      <input type="number" name="DMC" id="temp" placeholder="Enter DMC">
+      <br>
+
+      <input type="number" name="ISI" id="temp" placeholder="Enter ISI">
+      <br>
+
+      <input type="number" name="Classes" id="temp" placeholder="Enter Classes">
+      <br>
+
+      <input type="number" name="Region" id="temp" placeholder="Enter Region">
+      <br>
+      <button type="submit">Predict</button>
+      <br>
+    </form>
+    {% if result %}
+<h3>{{result}}</h3>
+{% endif %}
+  </div>
+  <script>
+    
+  </script>
+</body>
+</html>
